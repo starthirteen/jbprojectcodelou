@@ -1,21 +1,80 @@
 
+/*=============================
+      Base Element Styles
+===============================*/
+
+* {
+    box-sizing: border-box /*Forces padding and borders into the width and height of the elements*/
+}
+
 html, body {
     height: 100%;
     background-color: black;
     color: green;
     font-family: "Courier New";
-    text-align: center;
+    text-align: left;
+    margin: 2;
+}
+.footer {
+    background-color: green;
+    color: white;
+    padding: 3px;
+}
+
+.navbar {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+    display: inline;
+    width: 55px;
+
+}
+.navbar {
+    padding 200px;
 }
 
 
-/* Sticky Footer */
+
+/* ===================
+    Sticky Footer   
+=====================*/
 .wrapper {
     min-height:100%;
-    margin-bottom: -50px
+    margin-bottom: -50px;
+    
 }
+
 .footer,
 .push {
     height: 50px;
 }
-/* End Sticky Footer */
+/* ===================
+    End Sticky Footer   
+=====================*/
+
+#main-header {
+    background: green;
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.container {
+    padding: 3px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*==========================
+       Media Queries
+===========================*/
+
+@media (min-width: 769px) {
+    .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    }
+}
