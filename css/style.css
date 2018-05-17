@@ -1,6 +1,21 @@
-.mainpage {
+
+html, body {
+    height: 100%;
     background-color: black;
     color: green;
     font-family: "Courier New";
     text-align: center;
+    margin: 0;
 }
+
+
+/* Sticky Footer */
+.wrapper {
+    min-height:100%;
+    margin-bottom: -50px
+}
+.footer,
+.push {
+    height: 50px;
+}
+/* End Sticky Footer */
