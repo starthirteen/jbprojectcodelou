@@ -22,7 +22,9 @@
 
 * {
     box-sizing: border-box /*Forces padding and borders into the width and height of the elements*/
-}
+} 
+
+
 
 html, body {
     height: 100%;
@@ -31,6 +33,7 @@ html, body {
     font-family: "Courier New";
     text-align: left;
     margin: 2;
+        
 }
 .footer {
     background-color: green;
@@ -44,10 +47,12 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: green;
+    float: left;
 }
 
 li {
     float: left;
+        
 }
 
 li a {
@@ -72,10 +77,12 @@ li a:hover {
     color: white;
     padding-left: 3px;
     padding-right: 3px;
+    height: 135px;    
 }
 
 .container {
     padding: 3px;
+    min-width: 300px;
 }
 
 h1 {
@@ -83,6 +90,54 @@ h1 {
     white-space: nowrap;
 }
 
+
+/*dropdown button*/
+.dropbtn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    white-space: nowrap;
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+
+
+
+}
+.dropdown-content a:hover {
+    background-color: white;
+    color: green;
+    
+}
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: green;
+}
+
+
+/* end of dropdown button*/
 
 /*==========================
        Media Queries
@@ -127,5 +182,11 @@ h1 {
         display: table-cell;
     }
 /* ~~~~makes 2 columns take up same height, to force H1 to new line~~~~ */
+    
+        
+
+        
+
+
 
 }
