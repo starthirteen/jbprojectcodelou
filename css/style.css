@@ -88,7 +88,7 @@ h1 {
        Media Queries
 ===========================*/
 
-@media (min-width: 769px) {
+@media (min-width: 950px) {
     .container {
     width: 80%;
     margin: 0 auto;
@@ -101,12 +101,16 @@ h1 {
         float: left;
         display: inline;
         width: 48%;
+        max-width: 50%;
         
     }
     .rightcolumn {
         float: right;
         display: inline;
         width: 48%;
+    }
+    .clearfloat {
+        clear:both; 
     }
 /*clearfix*/
     .clearfix::after {
