@@ -1,0 +1,3 @@
+-navbar covers the body when width is made too small
+-size of figcaption text for wolf
+-footer formatting

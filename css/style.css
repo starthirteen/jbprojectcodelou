@@ -72,7 +72,6 @@ li a:hover {
     color: white;
     padding-left: 3px;
     padding-right: 3px;
-    height: 135px;
 }
 
 .container {
@@ -81,7 +80,9 @@ li a:hover {
 
 h1 {
     text-align: center;
+    white-space: nowrap;
 }
+
 
 /*==========================
        Media Queries
@@ -93,4 +94,34 @@ h1 {
     margin: 0 auto;
     max-width: 1000px;
     }
+    #graywolf {
+        float: left;
+    }
+    .leftcolumn {
+        float: left;
+        display: inline;
+        width: 48%;
+        
+    }
+    .rightcolumn {
+        float: right;
+        display: inline;
+        width: 48%;
+    }
+/*clearfix*/
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+/* ~~~~makes 2 columns take up same height, to force H1 to new line~~~~ */
+    .columncontainer {
+        display: table;
+        width: 100%;
+    }
+    .column {
+        display: table-cell;
+    }
+/* ~~~~makes 2 columns take up same height, to force H1 to new line~~~~ */
+
 }

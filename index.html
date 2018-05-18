@@ -11,7 +11,7 @@
 <body>
     <div class="wrapper">
         <header id="main-header">
-            <div class="container">
+            <div class="container clearfix">
                 <h1 style="text-shadow: 1px 1px 1px black">This is a website.</h1>
                 <ul class="navbar">
                    <li><a class="active"href="index.html">Section1</a></li>
@@ -23,33 +23,43 @@
         </header>
     
         <div class="container">
-            <h1>Paragraph One title</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus mi, mattis vel consectetur non, dapibus et felis. Etiam
-                eu risus commodo, commodo ligula at, fermentum purus. Cras non consectetur diam. Orci varius natoque penatibus et magnis
-                dis parturient montes, nascetur ridiculus mus. Duis mollis libero sed justo auctor, in pulvinar nisl vulputate. Aliquam
-                blandit arcu vulputate, mollis lectus et, convallis felis. Suspendisse molestie lectus et enim blandit fringilla. Duis
-                ultricies condimentum nulla sit amet sagittis. Quisque auctor purus et leo aliquet maximus. Ut ac diam id leo hendrerit
-                vestibulum nec elementum nisl. Vestibulum tincidunt, eros nec auctor hendrerit, ipsum ex bibendum ex, dapibus commodo
-                magna urna nec tortor. Sed ut massa ipsum. Nulla quis cursus sapien. Mauris sit amet dui non magna tincidunt convallis.
-                Quisque at placerat neque.</p>
-
-            <h1>Paragraph Two title</h1>    
-            <p>Praesent magna lacus, molestie eget augue semper, accumsan mattis nunc. Cras lorem lorem, dapibus eu leo ut, varius tincidunt
-                augue. Aliquam mauris quam, maximus vitae tellus sed, porta finibus nisl. Nulla feugiat id nibh quis facilisis. Morbi lacinia,
-                nibh ac posuere scelerisque, sem augue ultricies magna, eu vehicula arcu sapien non nibh. Aliquam erat volutpat. Ut viverra
-                eget nunc vitae pharetra. Nullam diam nibh, vestibulum ac vulputate ac, molestie nec ligula. Suspendisse eu ipsum sit amet
-                tellus faucibus consectetur. Suspendisse tempor vitae mi nec semper. Integer non tincidunt mauris. Morbi pulvinar ornare
-                urna in posuere. Nulla pretium, lacus a convallis efficitur, mauris neque rhoncus ante, non rhoncus ante odio in ex. Duis
-                ultricies libero vitae aliquam euismod.</p>
-           
-                <h1>Paragraph Three title</h1>    
+            <div class="columncontainer">
+                <div class="leftcolumn clearfix column">
+                    <h1>Paragraph One title</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus mi, mattis vel consectetur non, dapibus et felis. Etiam
+                        eu risus commodo, commodo ligula at, fermentum purus. Cras non consectetur diam. Orci varius natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus mus. Duis mollis libero sed justo auctor, in pulvinar nisl vulputate. Aliquam
+                        blandit arcu vulputate, mollis lectus et, convallis felis. Suspendisse molestie lectus et enim blandit fringilla. Duis
+                        ultricies condimentum nulla sit amet sagittis. Quisque auctor purus et leo aliquet maximus. Ut ac diam id leo hendrerit
+                        vestibulum nec elementum nisl. Vestibulum tincidunt, eros nec auctor hendrerit, ipsum ex bibendum ex, dapibus commodo
+                        magna urna nec tortor. Sed ut massa ipsum. Nulla quis cursus sapien. Mauris sit amet dui non magna tincidunt convallis.
+                        Quisque at placerat neque.</p>
+                </div>
+                <div class="rightcolumn clearfix column">
+                    <h1>Paragraph Two title</h1>    
+                    <p>Praesent magna lacus, molestie eget augue semper, accumsan mattis nunc. Cras lorem lorem, dapibus eu leo ut, varius tincidunt
+                        augue. Aliquam mauris quam, maximus vitae tellus sed, porta finibus nisl. Nulla feugiat id nibh quis facilisis. Morbi lacinia,
+                        nibh ac posuere scelerisque, sem augue ultricies magna, eu vehicula arcu sapien non nibh. Aliquam erat volutpat. Ut viverra
+                        eget nunc vitae pharetra. Nullam diam nibh, vestibulum ac vulputate ac, molestie nec ligula. Suspendisse eu ipsum sit amet
+                        tellus faucibus consectetur. Suspendisse tempor vitae mi nec semper. Integer non tincidunt mauris. Morbi pulvinar ornare
+                        urna in posuere. Nulla pretium, lacus a convallis efficitur, mauris neque rhoncus ante, non rhoncus ante odio in ex. Duis
+                        ultricies libero vitae aliquam euismod.&nbsp;</p>
+                </div>
+            </div>
+            <h1 style="width= 100%">Paragraph Three title</h1>
+                     
+            <figure id="graywolf" style="display:inline-block">
+                <img src="img/gray-wolf.jpg" title="the majestic wolf" width=400px>
+                <figcaption style="text-align:center;font-size=5px">What's this wolf looking at?</figcaption>
+            </figure>
+            
             <p>Fusce vitae laoreet felis, ullamcorper iaculis sem. Donec pharetra volutpat consectetur. In lectus nulla, dapibus eget accumsan
                 interdum, pharetra non dolor. Nunc facilisis nisl id scelerisque pellentesque. Proin id nisl ac eros facilisis blandit non
                 in odio. Maecenas eget augue ullamcorper, hendrerit lectus volutpat, viverra dolor. Maecenas tristique, turpis in mollis
                 euismod, elit risus vehicula orci, eu varius nibh libero ut mauris. Morbi sit amet pretium lacus. Praesent eu pulvinar odio.
                 Ut at volutpat libero, et ultricies enim. Nunc in tortor mi.</p>
             
-                <h1>Paragraph Four title</h1> 
+            <h1 style="display:block">Paragraph Four title</h1> 
             <p>Etiam tellus dolor, auctor sed nisl sed, consectetur dictum lacus. Curabitur porttitor ut nibh fermentum condimentum. Aenean
                 vitae faucibus dui. Nullam auctor, nisl in lacinia pellentesque, mi nulla imperdiet tellus, feugiat tincidunt augue massa
                 ut sapien. Curabitur euismod orci enim, id tempor risus posuere in. Suspendisse vel eleifend elit, vitae scelerisque augue.
