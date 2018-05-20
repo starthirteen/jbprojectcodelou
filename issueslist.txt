@@ -1,3 +1,11 @@
--navbar covers the body when width is made too small
--size of figcaption text for wolf
 -footer formatting
+-sticky footer not sticking when no content
+
+
+
+to-do:
+-add media rules for large screens
+-add social buttons to extras button
+-add 2nd page (css demo)
+-finish javascript page
+-add JS to main index

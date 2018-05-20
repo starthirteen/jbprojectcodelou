@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <title>This is a website</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8" />
+    <style>
+        canvas { background: black; display: block; margin:0 auto;}
+    </style>
+</head>
+<html>
+
+
+<!-- Main page content-->
+<header id="main-header">
+    <div class="container">
+        <h1 style="text-shadow: 1px 1px 1px black">This is a website.</h1>
+        <nav>
+            <div style="min-width: 450px;"><!-- stops navbar and dropdown button from wrapping-->
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="slidepage.html">Slidehow</a></li>
+                    <li><a class="active" href="jsapp.html">JavaScript</a></li>
+                </ul>
+                <div class="dropdown clearfix">
+                    <button class="dropbtn">Extra Stuff</button>
+                    <div class="dropdown-content">
+                        <a href="section4.html">Extra Stuff</a>
+                        <a href="section4.html">Extra Stuff</a>
+                        <a href="section4.html">Extra Stuff</a>
+                        <a href="section4.html">Extra Stuff</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>        
+</header>
+<body>
+    <div class="wrapper">
+        <canvas id="mycanvas" width="480" height="320"></canvas>
+
+        <script>
+
+            var canvas = document.getElementById("mycanvas");
+            var ctx = canvas.getContext("2d");
+            var x = canvas.width/2;
+            var y = canvas.height-30;
+            var dx = 2;
+            var dy = -2;
+            // x and y are the position of the ball
+            // dx and dy move the ball by 2 pixels on each axis by adding 2 and -2 to x and y
+
+            
+            function drawBall() {
+                ctx.beginPath();
+                ctx.arc(x, y, 10, 0, Math.PI*2);
+                ctx.fillStyle = "green";
+                ctx.fill()
+                ctx.closePath();
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height); // removes previous drawing of the ball each time it redraws
+                drawBall();
+                x += dx;
+                y += dy;
+            
+
+            }
+
+            setInterval(draw, 10);
+
+
+        
+        </script>
+           
+
+
+
+
+
+    </div> <!--end of wrapper-->
+
+    <!-- Bottom of the page stuff-->
+
+    <footer class="footer">
+            <ul>
+                bottom section 1
+                bottom section 2
+                bottom section 3
+            </ul>
+        
+    </footer>
+</body>
+
+
+
+
+
+
+
+
+</html>

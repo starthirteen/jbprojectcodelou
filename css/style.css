@@ -99,14 +99,11 @@ h1 {
     padding-top: 15px;
     padding-bottom: 15px;
     white-space: nowrap;
-    
 }
 .dropdown {
     position: relative;
     display: inline-block;
     float: right;
-    
-    
 }
 .dropdown-content {
     display: none;
@@ -114,19 +111,16 @@ h1 {
     background-color: green;
     min-width: 160px;
     z-index: 1;
+    text-align: center;
 }
 .dropdown-content a {
     color: white;
     text-decoration: none;
     display: block;
-
-
-
 }
 .dropdown-content a:hover {
     background-color: white;
     color: green;
-    
 }
 .dropdown:hover .dropdown-content {
     display:block;
@@ -135,15 +129,15 @@ h1 {
     background-color: white;
     color: green;
 }
-
-
 /* end of dropdown button*/
 
 /*==========================
        Media Queries
 ===========================*/
 
-@media (min-width: 950px) {
+
+/* medium screens */
+@media (min-width: 768px) {
     .container {
     width: 80%;
     margin: 0 auto;
@@ -151,18 +145,28 @@ h1 {
     }
     #graywolf {
         float: left;
+        display: inline-block;
+        max-width: 40%;
     }
-    .leftcolumn {
+   
+    #paragraph3 {
+        float: right;
+        display: inline-block;
+        width: 46%;
+        max-width: 100%;
+        
+    }
+    .primarycol {
         float: left;
         display: inline;
-        width: 48%;
+        width: 46%;
         max-width: 50%;
         
     }
-    .rightcolumn {
+    .secondarycol {
         float: right;
         display: inline;
-        width: 48%;
+        width: 46%;
     }
     .clearfloat {
         clear:both; 
@@ -174,16 +178,28 @@ h1 {
         clear: both;
     }
 /* ~~~~makes 2 columns take up same height, to force H1 to new line~~~~ */
-    .columncontainer {
+    .columncontainer2col {
         display: table;
         width: 100%;
     }
-    .column {
+    .primarycol, secondarycol {
         display: table-cell;
     }
-/* ~~~~makes 2 columns take up same height, to force H1 to new line~~~~ */
-    
-        
+}
+/* ~~~~ end of makes 2 columns take up same height, to force H1 to new line~~~~ */
+/* end of medium screens */
+
+/* large screens */
+@media (min-width: 1024px) {
+    .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1600px;
+    }
+
+
+
+/*end of large screens */  
 
         
 
