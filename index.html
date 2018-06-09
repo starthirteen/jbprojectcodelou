@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
     <title>This is a website</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <html>
 
@@ -14,12 +14,12 @@
         <nav>
             <div style="min-width: 450px;"><!-- stops navbar and dropdown button from wrapping-->
                 <ul class="navbar">
-                    <li><a class="active"href="index.html">Home</a></li>
-                    <li><a href="slidepage.html">Slidehow</a></li>
-                    <li><a href="jsapp.html">JavaScript</a></li>
+                    <li class= "mainnavli"><a class="active" href="index.html">Home</a></li>
+                    <li class= "mainnavli"><a href="slidepage.html">Slidehow</a></li>
+                    <li class= "mainnavli"><a href="diceroller.html">Dice Roller</a></li>
                 </ul>
                 <div class="dropdown clearfix">
-                    <button class="dropbtn">Extra Stuff</button>
+                    <button class="dropbtn">Extras</button>
                     <div class="dropdown-content">
                         <a href="section4.html">Extra Stuff</a>
                         <a href="section4.html">Extra Stuff</a>
@@ -113,11 +113,11 @@
 
     <!-- Bottom of the page stuff-->
 
-    <footer class="footer">
-            <ul>
-                bottom section 1
-                bottom section 2
-                bottom section 3
+    <footer class="footer" id="mainfooter">
+            <ul class="navbar" id="bottomnav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="slidepage.html">Slidehow</a></li>
+                <li><a href="jsapp.html">Dice Roller</a></li>
             </ul>
         
     </footer>
