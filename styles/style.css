@@ -40,7 +40,6 @@ li.mainnavli {
 
 li a {
     display: block;
-    text-align: center;
     color: white;
     text-decoration: none;
     padding: 15px 20px;
@@ -49,6 +48,10 @@ li a {
 li a:hover {
     background-color: white;
     color: green;
+}
+.fa {
+    text-align: left;
+
 }
 .active {
     background-color: white;
