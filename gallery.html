@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <title>This is a website</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css"> <!-- My style sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- social media badge library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jquery-->
+</head>
+<html>
+<!-- Main page content-->
+<header id="main-header">
+    <div class="container">
+        <h1 style="text-shadow: 1px 1px 1px black" id="hoverdots">This is a website.</h1>
+        <nav>
+            <div style="min-width: 450px;" id="headernav">
+                <!-- stops navbar and dropdown button from wrapping-->
+                <ul class="navbar">
+                    <li class="mainnavli">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="mainnavli">
+                        <a  class="active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="mainnavli">
+                        <a href="diceroller.html">Dice Roller</a>
+                    </li>
+                </ul>
+                <div class="dropdown clearfix">
+                    <button class="dropbtn">Extras</button>
+                    <div class="dropdown-content">
+                        <a href="https://twitter.com/" class="fa fa-twitter"> Twitter</a>
+                        <a href="https://www.reddit.com/" class="fa fa-reddit"> Reddit</a>
+                        <a href="https://www.linkedin.com/" class="fa fa-linkedin"> LinkedIn</a>
+                        <a href="https://github.com/starthirteen/jbprojectcodelou">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<body>
+    
+
+
+
+    <!-- Bottom of the page stuff-->
+
+    <footer class="footer" id="mainfooter">
+            <ul class="navbar" id="bottomnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="gallery.html">Gallery</a></li>
+                <li><a href="jsapp.html">Dice Roller</a></li>
+            </ul>
+        
+    </footer>
+
+<!-- animated dots on Heading hover -->
+<script>
+    var dots;
+    $("#hoverdots").hover(function () {
+        var count = 0;
+        dots = setInterval(function () {
+            count++;
+            document.getElementById("hoverdots").innerHTML = "This is a website." + new Array(count % 5).join('.');
+        }, 250);
+    }, function () {
+        clearInterval(dots);
+        $(this).html("This is a website");
+    });
+</script>
+</body>
+
+
+
+
+
+
+
+
+</html>

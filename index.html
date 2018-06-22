@@ -1,84 +1,92 @@
 <!DOCTYPE html>
+
 <head>
     <title>This is a website</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css"> <!-- My style sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- social media badge library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jquery-->
 </head>
 <html>
-
-
 <!-- Main page content-->
 <header id="main-header">
     <div class="container">
-        <h1 style="text-shadow: 1px 1px 1px black">This is a website.</h1>
+        <h1 style="text-shadow: 1px 1px 1px black" id="hoverdots">This is a website.</h1>
         <nav>
-            <div style="min-width: 450px;"><!-- stops navbar and dropdown button from wrapping-->
+            <div style="min-width: 450px;" id="headernav">
+                <!-- stops navbar and dropdown button from wrapping-->
                 <ul class="navbar">
-                    <li class= "mainnavli"><a class="active" href="index.html">Home</a></li>
-                    <li class= "mainnavli"><a href="slidepage.html">Slidehow</a></li>
-                    <li class= "mainnavli"><a href="diceroller.html">Dice Roller</a></li>
+                    <li class="mainnavli">
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li class="mainnavli">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="mainnavli">
+                        <a href="diceroller.html">Dice Roller</a>
+                    </li>
                 </ul>
                 <div class="dropdown clearfix">
                     <button class="dropbtn">Extras</button>
                     <div class="dropdown-content">
-                        <a href="section4.html">Extra Stuff</a>
-                        <a href="section4.html">Extra Stuff</a>
-                        <a href="section4.html">Extra Stuff</a>
-                        <a href="section4.html">Extra Stuff</a>
+                        <a href="https://twitter.com/" class="fa fa-twitter"> Twitter</a>
+                        <a href="https://www.reddit.com/" class="fa fa-reddit"> Reddit</a>
+                        <a href="https://www.linkedin.com/" class="fa fa-linkedin"> LinkedIn</a>
+                        <a href="https://github.com/starthirteen/jbprojectcodelou">GitHub</a>
                     </div>
                 </div>
             </div>
         </nav>
-    </div>        
+    </div>
 </header>
 <body>
     <div class="wrapper">
-
-        
-    
         <div class="container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus mi, mattis vel consectetur non, dapibus et felis. Etiam
-                eu risus commodo, commodo ligula at, fermentum purus. Cras non consectetur diam. Orci varius natoque penatibus et magnis
-                dis parturient montes, nascetur ridiculus mus. Duis mollis libero sed justo auctor, in pulvinar nisl vulputate. Aliquam
-                blandit arcu vulputate, mollis lectus et, convallis felis. Suspendisse molestie lectus et enim blandit fringilla. Duis
-                ultricies condimentum nulla sit amet sagittis. Quisque auctor purus et leo aliquet maximus. Ut ac diam id leo hendrerit
-                vestibulum nec elementum nisl. Vestibulum tincidunt, eros nec auctor hendrerit, ipsum ex bibendum ex, dapibus commodo
-                magna urna nec tortor. Sed ut massa ipsum. Nulla quis cursus sapien. Mauris sit amet dui non magna tincidunt convallis.
-                Quisque at placerat neque.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus mi, mattis vel consectetur non, dapibus et
+                felis. Etiam eu risus commodo, commodo ligula at, fermentum purus. Cras non consectetur diam. Orci varius
+                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis libero sed justo auctor,
+                in pulvinar nisl vulputate. Aliquam blandit arcu vulputate, mollis lectus et, convallis felis. Suspendisse
+                molestie lectus et enim blandit fringilla. Duis ultricies condimentum nulla sit amet sagittis. Quisque auctor
+                purus et leo aliquet maximus. Ut ac diam id leo hendrerit vestibulum nec elementum nisl. Vestibulum tincidunt,
+                eros nec auctor hendrerit, ipsum ex bibendum ex, dapibus commodo magna urna nec tortor. Sed ut massa ipsum.
+                Nulla quis cursus sapien. Mauris sit amet dui non magna tincidunt convallis. Quisque at placerat neque.
             </p>
             <div class="columncontainer3col">
                 <div class="columncontainer2col">
                     <div class="primarycol">
                         <h1>Heading One</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus mi, mattis vel consectetur non, dapibus et felis. Etiam
-                            eu risus commodo, commodo ligula at, fermentum purus. Cras non consectetur diam. Orci varius natoque penatibus et magnis
-                            dis parturient montes, nascetur ridiculus mus. Duis mollis libero sed justo auctor, in pulvinar nisl vulputate. Aliquam
-                            blandit arcu vulputate, mollis lectus et, convallis felis. Suspendisse molestie lectus et enim blandit fringilla. Duis
-                            ultricies condimentum nulla sit amet sagittis. Quisque auctor purus et leo aliquet maximus. Ut ac diam id leo hendrerit
-                            vestibulum nec elementum nisl. Vestibulum tincidunt, eros nec auctor hendrerit, ipsum ex bibendum ex, dapibus commodo
-                            magna urna nec tortor. Sed ut massa ipsum. Nulla quis cursus sapien. Mauris sit amet dui non magna tincidunt convallis.
-                            Quisque at placerat neque.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus mi, mattis vel consectetur non,
+                            dapibus et felis. Etiam eu risus commodo, commodo ligula at, fermentum purus. Cras non consectetur
+                            diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Duis mollis libero sed justo auctor, in pulvinar nisl vulputate. Aliquam blandit arcu vulputate,
+                            mollis lectus et, convallis felis. Suspendisse molestie lectus et enim blandit fringilla. Duis
+                            ultricies condimentum nulla sit amet sagittis. Quisque auctor purus et leo aliquet maximus. Ut
+                            ac diam id leo hendrerit vestibulum nec elementum nisl. Vestibulum tincidunt, eros nec auctor
+                            hendrerit, ipsum ex bibendum ex, dapibus commodo magna urna nec tortor. Sed ut massa ipsum. Nulla
+                            quis cursus sapien. Mauris sit amet dui non magna tincidunt convallis. Quisque at placerat neque.</p>
                     </div>
                     <div class="secondarycol">
-                        <h1>Heading Two</h1>    
-                        <p>Praesent magna lacus, molestie eget augue semper, accumsan mattis nunc. Cras lorem lorem, dapibus eu leo ut, varius tincidunt
-                            augue. Aliquam mauris quam, maximus vitae tellus sed, porta finibus nisl. Nulla feugiat id nibh quis facilisis. Morbi lacinia,
-                            nibh ac posuere scelerisque, sem augue ultricies magna, eu vehicula arcu sapien non nibh. Aliquam erat volutpat. Ut viverra
-                            eget nunc vitae pharetra. Nullam diam nibh, vestibulum ac vulputate ac, molestie nec ligula. Suspendisse eu ipsum sit amet
-                            tellus faucibus consectetur. Suspendisse tempor vitae mi nec semper. Integer non tincidunt mauris. Morbi pulvinar ornare
-                            urna in posuere. Nulla pretium, lacus a convallis efficitur, mauris neque rhoncus ante, non rhoncus ante odio in ex. Duis
-                            ultricies libero vitae aliquam euismod.&nbsp;</p>
+                        <h1>Heading Two</h1>
+                        <p>Praesent magna lacus, molestie eget augue semper, accumsan mattis nunc. Cras lorem lorem, dapibus
+                            eu leo ut, varius tincidunt augue. Aliquam mauris quam, maximus vitae tellus sed, porta finibus
+                            nisl. Nulla feugiat id nibh quis facilisis. Morbi lacinia, nibh ac posuere scelerisque, sem augue
+                            ultricies magna, eu vehicula arcu sapien non nibh. Aliquam erat volutpat. Ut viverra eget nunc
+                            vitae pharetra. Nullam diam nibh, vestibulum ac vulputate ac, molestie nec ligula. Suspendisse
+                            eu ipsum sit amet tellus faucibus consectetur. Suspendisse tempor vitae mi nec semper. Integer
+                            non tincidunt mauris. Morbi pulvinar ornare urna in posuere. Nulla pretium, lacus a convallis
+                            efficitur, mauris neque rhoncus ante, non rhoncus ante odio in ex. Duis ultricies libero vitae
+                            aliquam euismod.&nbsp;</p>
                     </div>
-            
                 </div>
                 <div class="tertiarycol">
                     <h1>Heading Three</h1>
                     <div id="paragraph3">
-                        <p>Fusce vitae laoreet felis, ullamcorper iaculis sem. Donec pharetra volutpat consectetur. In lectus nulla, dapibus eget accumsan
-                            interdum, pharetra non dolor. Nunc facilisis nisl id scelerisque pellentesque. Proin id nisl ac eros facilisis blandit non
-                            in odio. Maecenas eget augue ullamcorper, hendrerit lectus volutpat, viverra dolor. Maecenas tristique, turpis in mollis
-                            euismod, elit risus vehicula orci, eu varius nibh libero ut mauris. Morbi sit amet pretium lacus. Praesent eu pulvinar odio.
-                            Ut at volutpat libero, et ultricies enim. Nunc in tortor mi.</p>
+                        <p>Fusce vitae laoreet felis, ullamcorper iaculis sem. Donec pharetra volutpat consectetur. In lectus
+                            nulla, dapibus eget accumsan interdum, pharetra non dolor. Nunc facilisis nisl id scelerisque
+                            pellentesque. Proin id nisl ac eros facilisis blandit non in odio. Maecenas eget augue ullamcorper,
+                            hendrerit lectus volutpat, viverra dolor. Maecenas tristique, turpis in mollis euismod, elit
+                            risus vehicula orci, eu varius nibh libero ut mauris. Morbi sit amet pretium lacus. Praesent
+                            eu pulvinar odio. Ut at volutpat libero, et ultricies enim. Nunc in tortor mi.</p>
                     </div>
                 </div>
             </div>
@@ -86,41 +94,64 @@
                 <img src="img/gray-wolf.jpg" title="the majestic wolf" width="100%">
                 <figcaption style="text-align:center;font-size: 13px">What's this wolf looking at?</figcaption>
             </figure>
-            
-            <h1 style="display:block" class="clearfloat">Heading Four</h1> 
-            <p>Etiam tellus dolor, auctor sed nisl sed, consectetur dictum lacus. Curabitur porttitor ut nibh fermentum condimentum. Aenean
-                vitae faucibus dui. Nullam auctor, nisl in lacinia pellentesque, mi nulla imperdiet tellus, feugiat tincidunt augue massa
-                ut sapien. Curabitur euismod orci enim, id tempor risus posuere in. Suspendisse vel eleifend elit, vitae scelerisque augue.
-                Etiam non magna vehicula, lobortis urna eu, rutrum augue. Etiam eu nisi sed nibh tempor consequat.</p>
-            
-                <h1>Heading Five</h1> 
-            <p>Etiam tincidunt ligula at efficitur gravida. Sed id urna eu elit faucibus auctor eget a mauris. Cras consequat tempor dolor
-                ac pulvinar. Praesent finibus placerat mi in tristique. Ut bibendum imperdiet sodales. Suspendisse rutrum pellentesque dictum.
-                Nulla non dui vitae leo eleifend tincidunt.</p>
 
-                <h1>Heading Six</h1> 
-                <p>Duis ornare purus non neque vehicula commodo vulputate sit amet tellus. Nullam accumsan enim erat, a lobortis nisl mollis
-                a. Nullam quis finibus libero, eu pellentesque purus. Nunc vitae ligula id erat rutrum maximus sit amet id erat. Phasellus
-                nisl lacus, accumsan a ultrices sit amet, laoreet at risus. Vivamus rhoncus, felis rutrum malesuada convallis, libero tortor
-                feugiat nisl, ultrices vestibulum nunc nunc sit amet orci. Nulla facilisi. Nam efficitur mauris orci, feugiat imperdiet libero
-                rhoncus vel. Cras sodales dictum blandit. Nunc euismod feugiat dui, eget tincidunt urna gravida imperdiet. Pellentesque et
-                malesuada velit, ut convallis lectus. Fusce ullamcorper leo sit amet lectus auctor semper. Nulla non quam tempor, sodales
-                neque a, iaculis nibh. Nullam posuere dignissim justo, eu maximus turpis euismod at. Aenean ac auctor justo. Vestibulum porta
+            <h1 style="display:block" class="clearfloat">Heading Four</h1>
+            <p>Etiam tellus dolor, auctor sed nisl sed, consectetur dictum lacus. Curabitur porttitor ut nibh fermentum condimentum.
+                Aenean vitae faucibus dui. Nullam auctor, nisl in lacinia pellentesque, mi nulla imperdiet tellus, feugiat
+                tincidunt augue massa ut sapien. Curabitur euismod orci enim, id tempor risus posuere in. Suspendisse vel
+                eleifend elit, vitae scelerisque augue. Etiam non magna vehicula, lobortis urna eu, rutrum augue. Etiam eu
+                nisi sed nibh tempor consequat.</p>
+
+            <h1>Heading Five</h1>
+            <p>Etiam tincidunt ligula at efficitur gravida. Sed id urna eu elit faucibus auctor eget a mauris. Cras consequat
+                tempor dolor ac pulvinar. Praesent finibus placerat mi in tristique. Ut bibendum imperdiet sodales. Suspendisse
+                rutrum pellentesque dictum. Nulla non dui vitae leo eleifend tincidunt.</p>
+
+            <h1>Heading Six</h1>
+            <p>Duis ornare purus non neque vehicula commodo vulputate sit amet tellus. Nullam accumsan enim erat, a lobortis
+                nisl mollis a. Nullam quis finibus libero, eu pellentesque purus. Nunc vitae ligula id erat rutrum maximus
+                sit amet id erat. Phasellus nisl lacus, accumsan a ultrices sit amet, laoreet at risus. Vivamus rhoncus,
+                felis rutrum malesuada convallis, libero tortor feugiat nisl, ultrices vestibulum nunc nunc sit amet orci.
+                Nulla facilisi. Nam efficitur mauris orci, feugiat imperdiet libero rhoncus vel. Cras sodales dictum blandit.
+                Nunc euismod feugiat dui, eget tincidunt urna gravida imperdiet. Pellentesque et malesuada velit, ut convallis
+                lectus. Fusce ullamcorper leo sit amet lectus auctor semper. Nulla non quam tempor, sodales neque a, iaculis
+                nibh. Nullam posuere dignissim justo, eu maximus turpis euismod at. Aenean ac auctor justo. Vestibulum porta
                 ex quis eros pretium, nec tincidunt mauris euismod.</p>
         </div>
         <div class="push"></div>
-    </div> <!--end of wrapper-->
+    </div>
+    <!--end of wrapper-->
 
     <!-- Bottom of the page stuff-->
 
     <footer class="footer" id="mainfooter">
-            <ul class="navbar" id="bottomnav">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="slidepage.html">Slidehow</a></li>
-                <li><a href="jsapp.html">Dice Roller</a></li>
-            </ul>
-        
+        <ul class="navbar" id="bottomnav">
+            <li>
+                <a class="active" href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="jsapp.html">Dice Roller</a>
+            </li>
+        </ul>
+
     </footer>
+<!-- animated dots on Heading hover -->
+    <script>
+        var dots;
+        $("#hoverdots").hover(function () {
+            var count = 0;
+            dots = setInterval(function () {
+                count++;
+                document.getElementById("hoverdots").innerHTML = "This is a website." + new Array(count % 5).join('.');
+            }, 250);
+        }, function () {
+            clearInterval(dots);
+            $(this).html("This is a website");
+        });
+    </script>
 </body>
 
 
