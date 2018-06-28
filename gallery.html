@@ -6,13 +6,11 @@
     <link rel="stylesheet" href="styles/style.css"> <!-- My style sheet-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- social media badge library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jquery-->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"><!-- Bootstrap CSS -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script><!-- Bootstrap JS-->
 </head>
 <html>
 <!-- Main page content-->
 <header id="main-header">
-    <div class="containerb">
+    <div class="container">
         <h1 style="text-shadow: 1px 1px 1px black" id="hoverdots">This is a website.</h1>
         <nav>
             <div style="min-width: 450px;" id="headernav">
@@ -44,7 +42,7 @@
 <body>
     <div class="imgflex">
         <!-- img001 -->
-        <img id="myImg1" class="galleryimg" src="img/img_001.jpg" alt="img1" style="width:100%;max-width:300px">
+            <img id="myImg1" src="img/img_001.jpg" alt="img1" style="width:100%;max-width:300px">
         <!-- The Modal -->
         <div id="myModal1" class="modal">
         <!-- The Close Button -->
@@ -77,7 +75,7 @@
         </div>
 
         <!-- img004 -->
-        <img id="myImg4" src="img/img_004.jpg" alt="img4" style="width:100%;max-width:300px">
+            <img id="myImg4" src="img/img_004.jpg" alt="img4" style="width:100%;max-width:300px">
         <!-- The Modal -->
         <div id="myModal4" class="modal">
         <!-- The Close Button -->
@@ -86,20 +84,24 @@
         <img class="modal-content" id="img04">
         <!-- Modal Caption (Image Text) -->
         </div>
-
     </div>
 
 
-    <!-- Bottom of the page stuff-->
-
+    <!-- Footer-->
     <footer class="footer" id="mainfooter">
             <ul class="navbar" id="bottomnav">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="gallery.html">Gallery</a></li>
-                <li><a href="jsapp.html">Dice Roller</a></li>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="jsapp.html">Dice Roller</a>
+                </li>
             </ul>
-        
     </footer>
+        
    
 <!-- animated dots on Heading hover -->
     <script>
