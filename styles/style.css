@@ -5,9 +5,6 @@
 * {
     box-sizing: border-box /*Forces padding and borders into the width and height of the elements*/
 } 
-
-
-
 html, body {
     background-color: black;
     color: green;
@@ -16,8 +13,6 @@ html, body {
     margin: 2;
         
 }
-
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -62,15 +57,11 @@ li a:hover {
     color: white;
     padding-left: 3px;
     padding-right: 3px;
-    height: 135px;    
+    height: 135px;
+    
 }
 #headernav {
     position: relative;
-}
-
-.containerb {
-    padding: 3px;
-    min-width: 300px;
 }
 
 h1 {
@@ -83,10 +74,10 @@ h1 {
     position: absolute;
     left: 35%;
     margin-top: 50px;
-
 }
 
 /* footer */
+
 #mainfooter {
     height: 65px;
     display: block;
@@ -101,8 +92,6 @@ h1 {
     background-color: green;
     color: white;
     margin-top: 85px;
-    
-    
 }
 
 /*  Sticky Footer */
@@ -211,11 +200,15 @@ input[type=text]{
     
 }
 
-/* Modal gallery */
+/* ========= Modal gallery ========== */
 #myImg1 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #myImg1:hover {opacity: 0.7;}
@@ -224,6 +217,10 @@ input[type=text]{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #myImg2:hover {opacity: 0.7;}
@@ -232,6 +229,10 @@ input[type=text]{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #myImg3:hover {opacity: 0.7;}
@@ -240,6 +241,10 @@ input[type=text]{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #myImg4:hover {opacity: 0.7;}
@@ -299,14 +304,14 @@ input[type=text]{
 .imgflex {
     display:flex;
     flex-direction: column;
-    height: 200px;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-top: 300px;
-    margin-left: 25px;
-    margin-right: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-basis: auto;
 }
 
+.galimg {
+    max-width: 90%;
+}
 
 
 /*==========================
@@ -318,11 +323,11 @@ input[type=text]{
 
 /* medium screens */
 @media (min-width: 768px) {
-    .container {
+    /* .container {
     width: 80%;
     margin: 0 auto;
     max-width: 1000px;
-    }
+    } */
     #graywolf {
         float: left;
         display: inline-block;
@@ -371,16 +376,14 @@ input[type=text]{
 
 /* gallery */
     .imgflex {
-        display:flex;
         flex-direction: row;
-        height: 200px;
-        align-items: flex-start;
-        justify-content: space-around;
         margin-top: 50px;
-        margin-left: 25px;
-        margin-right: 25px;
+        flex-grow: 1;
+        
     }
-
+    .galimg {
+        max-width: 24%;
+    }
 }
 
         
