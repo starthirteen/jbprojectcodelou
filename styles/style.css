@@ -10,9 +10,13 @@ html, body {
     color: green;
     font-family: "Courier New";
     text-align: left;
-    margin: 2;
-        
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+/* Header stuff */
 ul {
     list-style-type: none;
     margin: 0;
@@ -24,12 +28,13 @@ ul {
 
 li.mainnavli {
     float: left;
-        
 }
-
+/* social media badges additional CSS */
 .extrasbadges {
     display: inline;
-
+}
+.fa {
+    text-align: left;
 }
 
 li a {
@@ -43,10 +48,7 @@ li a:hover {
     background-color: white;
     color: green;
 }
-.fa {
-    text-align: left;
 
-}
 .active {
     background-color: white;
     color: green;
@@ -58,55 +60,16 @@ li a:hover {
     padding-left: 3px;
     padding-right: 3px;
     height: 135px;
-    
 }
-#headernav {
-    position: relative;
-}
-
 h1 {
     text-align: center;
     white-space: nowrap;
-    
-    
 }
 #hoverdots {
     position: absolute;
     left: 35%;
     margin-top: 50px;
 }
-
-/* footer */
-
-#mainfooter {
-    height: 65px;
-    display: block;
-}
-#bottomnav {
-    margin-left:auto;
-    margin-right:auto;
-    float: none;
-    text-align: center;
-}
-.footer {
-    background-color: green;
-    color: white;
-    margin-top: 85px;
-}
-
-/*  Sticky Footer */
-.wrapper {
-    min-height:100%;
-    margin-bottom: -50px;
-    
-}
-
-.footer,
-.push {
-    height: 50px;
-}
-
-
 /*dropdown button*/
 .dropbtn {
     background-color: green;
@@ -145,19 +108,30 @@ h1 {
     background-color: white;
     color: green;
 }
-
 button:hover {
     cursor: pointer;
 }
+/* End of header */
+
+/* footer */
+#bottomnav {
+    margin-left:auto;
+    margin-right:auto;
+    float: none;
+    text-align: center;
+}
+.footer {
+    background-color: green;
+    color: white;
+}
+
+
 
 /* ======= Dice roller =======*/
 table {
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 100px;
-    margin-bottom: 25px;
+    margin: auto;
+    margin-top: 50px;
     text-align: center;
-    
     border-collapse: collapse;
 }
 td {
@@ -165,7 +139,6 @@ td {
     border: 1px solid green;
     font-weight: bold;
     border: 1px solid green;
-    
 }
 .rollbuttontd {
     border: none;
@@ -197,7 +170,6 @@ input[type=text]{
 }
 .diceimg {
     height: 30px;
-    
 }
 
 /* ========= Modal gallery ========== */
@@ -307,6 +279,8 @@ input[type=text]{
     align-items: center;
     justify-content: center;
     flex-basis: auto;
+    max-width: 95%;
+    margin: auto;
 }
 
 .galimg {
@@ -323,30 +297,23 @@ input[type=text]{
 
 /* medium screens */
 @media (min-width: 768px) {
-    /* .container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1000px;
-    } */
+    
     #graywolf {
         float: left;
         display: inline-block;
         max-width: 40%;
     }
-   
     #paragraph3 {
         float: right;
         display: inline-block;
         width: 46%;
         max-width: 100%;
-        
     }
     .primarycol {
         float: left;
         display: inline;
         width: 46%;
         max-width: 50%;
-        
     }
     .secondarycol {
         float: right;
@@ -356,13 +323,13 @@ input[type=text]{
     .clearfloat {
         clear:both; 
     }
-/*clearfix*/
+    /*clearfix*/
     .clearfix::after {
         content: "";
         display: table;
         clear: both;
     }
-/* ~~~~makes 2 columns take up same height, to force H1 to new line~~~~ */
+    /* ~~~~makes 2 columns take up same height, to force H1 to new line~~~~ */
     .columncontainer2col {
         display: table;
         width: 100%;
@@ -370,20 +337,28 @@ input[type=text]{
     .primarycol, secondarycol {
         display: table-cell;
     }
-    table {
-        margin-bottom:255px; 
-    }
-
-/* gallery */
+    
+    /* gallery */
     .imgflex {
         flex-direction: row;
         margin-top: 50px;
         flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .galimg {
+        max-width: 40%;
+    }
+}
         
+/* Large Screens */
+@media (min-width: 1200px) {
+    .imgflex {
+        flex-direction: row;
+        margin-top: 50px;
+        flex-grow: 1;
+        flex-wrap: nowrap;
     }
     .galimg {
         max-width: 24%;
     }
 }
-
-        
