@@ -271,7 +271,7 @@ body {
 /* Media Queries */
 
     /* medium screens */
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 900px) {
 
          /* main nav */
             li.mainnavli {
