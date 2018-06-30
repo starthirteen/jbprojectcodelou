@@ -1,106 +1,108 @@
 <!DOCTYPE html>
-
 <head>
     <title>This is a website</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css"> <!-- My style sheet-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- social media badge library-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jquery-->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- My style sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- social media badge library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jquery-->
 </head>
 <html>
 <!-- Main page content-->
-
 <body>
     <header id="main-header">
         <h1 style="text-shadow: 1px 1px 1px black" id="hoverdots">This is a website.</h1>
         <div id="headernav">
-                <!-- stops navbar and dropdown button from wrapping-->
-                <ul class="navbar">
-                    <li class="mainnavli">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="mainnavli">
-                        <a  class="active" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="mainnavli">
-                        <a href="diceroller.html">Dice Roller</a>
-                    </li>
-                </ul>
-                <div class="dropdown clearfix">
-                    <button class="dropbtn">Extras</button>
-                    <div class="dropdown-content">
-                        <a href="https://twitter.com/" class="fa fa-twitter">Twitter</a>
-                        <a href="https://www.reddit.com/" class="fa fa-reddit"> Reddit</a>
-                        <a href="https://www.linkedin.com/" class="fa fa-linkedin"> LinkedIn</a>
-                        <a href="https://github.com/starthirteen/jbprojectcodelou" class="fa" style="padding-left: 15px">GitHub</a>
-                    </div>
+            <!-- stops navbar and dropdown button from wrapping-->
+            <ul class="navbar">
+                <li class="mainnavli">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="mainnavli">
+                    <a class="active" href="gallery.html">Gallery</a>
+                </li>
+                <li class="mainnavli">
+                    <a href="diceroller.html">Dice Roller</a>
+                </li>
+            </ul>
+            <!-- extras dropdown -->
+            <div class="dropdown clearfix">
+                <button class="dropbtn">Extras</button>
+                <div class="dropdown-content">
+                    <a href="https://twitter.com/" class="fa fa-twitter">Twitter</a>
+                    <a href="https://www.reddit.com/" class="fa fa-reddit"> Reddit</a>
+                    <a href="https://www.linkedin.com/" class="fa fa-linkedin"> LinkedIn</a>
+                    <a href="https://github.com/starthirteen/jbprojectcodelou" class="fa" style="padding-left: 15px">GitHub</a>
                 </div>
+            </div>
         </div>
     </header>
     <div class="imgflex">
+
         <!-- img001 -->
-        <img id="myImg1" class="galimg" src="img/img_001.jpg" alt="img1" >
+        <img id="myImg1" class="galimg" src="img/img_001.jpg" alt="img1">
         <!-- The Modal -->
         <div id="myModal1" class="modal">
-        <!-- The Close Button -->
-        <span id="close1" class="close">&times;</span>
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
-        <!-- Modal Caption (Image Text) -->
+            <!-- The Close Button -->
+            <span id="close1" class="close">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            <!-- Modal Caption (Image Text) -->
         </div>
 
         <!-- img002 -->
         <img id="myImg2" class="galimg" src="img/img_002.jpg" alt="img2">
         <!-- The Modal -->
         <div id="myModal2" class="modal">
-        <!-- The Close Button -->
-        <span id="close2" class="close">&times;</span>
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img02">
-        <!-- Modal Caption (Image Text) -->
+            <!-- The Close Button -->
+            <span id="close2" class="close">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img02">
+            <!-- Modal Caption (Image Text) -->
         </div>
 
         <!-- img003 -->
         <img id="myImg3" class="galimg" src="img/img_003.jpg" alt="img3">
         <!-- The Modal -->
         <div id="myModal3" class="modal">
-        <!-- The Close Button -->
-        <span id="close3" class="close">&times;</span>
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img03">
-        <!-- Modal Caption (Image Text) -->
+            <!-- The Close Button -->
+            <span id="close3" class="close">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img03">
+            <!-- Modal Caption (Image Text) -->
         </div>
 
         <!-- img004 -->
         <img id="myImg4" class="galimg" src="img/img_004.jpg" alt="img4">
         <!-- The Modal -->
         <div id="myModal4" class="modal">
-        <!-- The Close Button -->
-        <span id="close4" class="close">&times;</span>
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img04">
-        <!-- Modal Caption (Image Text) -->
+            <!-- The Close Button -->
+            <span id="close4" class="close">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img04">
+            <!-- Modal Caption (Image Text) -->
         </div>
     </div>
 
 
     <!-- Footer-->
-    <footer class="footer" id="mainfooter">
-            <ul class="navbar" id="bottomnav">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a class="active" href="gallery.html">Gallery</a>
-                </li>
-                <li>
-                    <a href="diceroller.html">Dice Roller</a>
-                </li>
-            </ul>
+    <footer>
+        <ul class="navbar" id="bottomnav">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="active" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="diceroller.html">Dice Roller</a>
+            </li>
+        </ul>
     </footer>
-        
-   
-<!-- animated dots on Heading hover -->
+
+    <!-- animated dots on Heading hover -->
     <script>
         var dots;
         $("#hoverdots").hover(function () {
@@ -114,64 +116,55 @@
             $(this).html("This is a website");
         });
     </script>
-    <!-- Modal -->
+    <!-- Modal Script-->
     <script>
         // Img001
         var modal1 = document.getElementById('myModal1');
         var img1 = document.getElementById('myImg1');
         var modalImg1 = document.getElementById("img01");
-        img1.onclick = function(){
+        img1.onclick = function () {
             modal1.style.display = "block";
             modalImg1.src = this.src;
         }
-        $("#close1").click(function(){
-        $("#myModal1").hide();
+        $("#close1").click(function () {
+            $("#myModal1").hide();
         });
 
         // Img002
         var modal2 = document.getElementById('myModal2');
         var img2 = document.getElementById('myImg2');
         var modalImg2 = document.getElementById("img02");
-        img2.onclick = function(){
+        img2.onclick = function () {
             modal2.style.display = "block";
             modalImg2.src = this.src;
         }
-        $("#close2").click(function(){
-        $("#myModal2").hide();
+        $("#close2").click(function () {
+            $("#myModal2").hide();
         });
 
         // Img003
         var modal3 = document.getElementById('myModal3');
         var img3 = document.getElementById('myImg3');
         var modalImg3 = document.getElementById("img03");
-        img3.onclick = function(){
+        img3.onclick = function () {
             modal3.style.display = "block";
             modalImg3.src = this.src;
         }
-        $("#close3").click(function(){
-        $("#myModal3").hide();
+        $("#close3").click(function () {
+            $("#myModal3").hide();
         });
 
         // Img004
         var modal4 = document.getElementById('myModal4');
         var img4 = document.getElementById('myImg4');
         var modalImg4 = document.getElementById("img04");
-        img4.onclick = function(){
+        img4.onclick = function () {
             modal4.style.display = "block";
             modalImg4.src = this.src;
         }
-        $("#close4").click(function(){
-        $("#myModal4").hide();
+        $("#close4").click(function () {
+            $("#myModal4").hide();
         });
-
     </script>
 </body>
-
-
-
-
-
-
-
-
 </html>
