@@ -25,12 +25,23 @@ body {
         padding: 0;
         overflow: hidden;
         background-color: green;
-        float: left;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: green;
+        min-width: 160px;
+        z-index: 1;
+        text-align: center;
+    }
+    .dropdown {
+        display: none; 
+    }
+    #headernav {
+        display: flex;
     }
 
-    li.mainnavli {
-        float: left;
-    }
+    
     /* social media badges additional CSS */
         .extrasbadges {
             display: inline;
@@ -39,7 +50,7 @@ body {
             text-align: left;
     }
     li a {
-        display: block;
+        display: flex;
         color: white;
         text-decoration: none;
         padding: 15px 20px;
@@ -63,50 +74,9 @@ body {
         text-align: center;
         white-space: nowrap;
     }
-    /* animated dots hovering over This is a Website */
-    #hoverdots {
-        position: absolute;
-        left: 35%;
-        margin-top: 50px;
-    }
+    
     /*dropdown button*/
-        .dropbtn {
-            background-color: green;
-            color: white;
-            border: none;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            white-space: nowrap;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            float: right;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: green;
-            min-width: 160px;
-            z-index: 1;
-            text-align: center;
-        }
-        .dropdown-content a {
-            color: white;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            background-color: white;
-            color: green;
-        }
-        .dropdown:hover .dropdown-content {
-            display:block;
-        }
-        .dropdown:hover .dropbtn {
-            background-color: white;
-            color: green;
-        }
+        
         button:hover {
             cursor: pointer;
         }
@@ -123,6 +93,19 @@ body {
             background-color: green;
             color: white;
         }
+/* wolf picture */
+    #graywolf {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        flex-grow: 2;
+    }
+    #wolfimg {
+        max-width: 48%;
+        margin-top: 10px;
+    }
 
 /* ======= Dice roller =======*/
     table {
@@ -288,7 +271,56 @@ body {
 /* Media Queries */
 
     /* medium screens */
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
+
+         /* main nav */
+            li.mainnavli {
+                float: left;
+            }
+            ul {
+                float: left;
+            }
+            /* dropdown */
+                .dropdown {
+                    float: right;
+                }
+                
+                .dropbtn {
+            background-color: green;
+            color: white;
+            border: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            white-space: nowrap;
+        }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                
+            }
+            .dropdown-content a {
+                color: white;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover {
+                background-color: white;
+                color: green;
+            }
+            .dropdown:hover .dropdown-content {
+                display:block;
+            }
+            .dropdown:hover .dropbtn {
+                background-color: white;
+                color: green;
+            }
+        /* animated dots hovering over This is a Website */
+            #hoverdots {
+                position: absolute;
+                left: 35%;
+                margin-top: 50px;
+            }
+
         
         /* gallery */
             .imgflex {
@@ -313,14 +345,14 @@ body {
                 flex-direction: column;
             }
             .content3 {
-                max-width: 48%;
+                max-width: 70%;
                 order: 3;
                 margin: auto;
             }
             #graywolf {
                 order: 2;
                 align-self: center;
-                margin: auto;
+                margin: auto;                
             }
             .content4,
             .content5,
@@ -328,10 +360,14 @@ body {
                 order: 4;
                 margin: auto;
             }
+        /* Footer */
+            #smallscreenextras {
+                display: none;
+            }
     }
         
-/* Large Screens */
-    @media (min-width: 1200px) {
+    /* Large Screens */
+    @media only screen and (min-width: 1200px) {
         .imgflex {
             flex-direction: row;
             margin-top: 50px;
