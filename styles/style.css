@@ -82,7 +82,7 @@ body {
         }
         /* End of header */
 
-        /* footer */
+    /* footer */
         #bottomnav {
             margin-left:auto;
             margin-right:auto;
@@ -93,6 +93,11 @@ body {
             background-color: green;
             color: white;
         }
+        #version {
+            text-align: right;
+
+        }
+
 /* wolf picture */
     #graywolf {
         display:flex;
@@ -271,7 +276,7 @@ body {
 /* Media Queries */
 
     /* medium screens */
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width:900px) {
 
          /* main nav */
             li.mainnavli {
