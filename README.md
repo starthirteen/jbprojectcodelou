@@ -10,7 +10,7 @@ Tuesday night front end web class final project - Demonstrates JavaScript, CSS a
 
 ## Author
 
-* **Josh Boyd** - *Original work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Josh Boyd** - *Original work*
 
 ## License
 
