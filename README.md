@@ -2,6 +2,14 @@
 
 Tuesday night front end web class final project - Demonstrates JavaScript, CSS and HTML
 
+## Instructions
+
+Download or clone project and open index.html for main page. Entire project accessible from any associated html page. 
+
+## Custom CSS and JavaScript Classes
+
+See style.css, the .html documents as well as app.js for comments with the purpose of each class and to see what it's used for. 
+
 ## Built With
 
 * [Visual Studio Code](https://code.visualstudio.com/) - Text editor
